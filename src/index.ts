@@ -3,16 +3,16 @@ const bodyParser = require("body-parser");
 const pg = require("pg");
 
 const app = express();
-const port = 3000;
+const port = 4000;
 
 app.use(bodyParser.json());
 
 const pool = new pg.Pool({
   user: "postgres",
   host: "localhost",
-  database: "hotel_ahar",
-  password: "Rajesh@2098",
-  port: 5433,
+  database: "postgres",
+  password: "Srujan@123",
+  port: 5432,
 });
 
 // Get all users
